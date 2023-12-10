@@ -1,0 +1,5 @@
+insert into public.categoria values ('Lanche', current_timestamp)
+insert into public.categoria values ('Acompanhamento', current_timestamp)
+insert into public.categoria values ('Bebida', current_timestamp)
+insert into public.categoria values ('Sobremesa', current_timestamp)
+insert into public.categoria values ('Combo', current_timestamp)
