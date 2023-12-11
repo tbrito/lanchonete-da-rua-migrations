@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: liquibase/liquibase-github-action@v2
         with:
-          operation: 'update-sql'
+          operation: 'updateSQL'
           classpath: 'produtos'
           changeLogFile: '202312110756_insertProducts.sql'
           username: ${{ secrets.USERNAME }}
