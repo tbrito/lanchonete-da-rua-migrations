@@ -1,3 +1,5 @@
+SET SEARCH_PATH TO public;
+
 insert into categoria (nome, created_at) values ('Lanche', current_timestamp)
 insert into categoria (nome, created_at) values ('Acompanhamento', current_timestamp)
 insert into categoria (nome, created_at) values ('Bebida', current_timestamp)
