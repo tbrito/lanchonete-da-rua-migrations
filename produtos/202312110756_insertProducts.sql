@@ -1,10 +1,8 @@
-SET SEARCH_PATH TO public;
-
-insert into categoria (nome, created_at) values ('Lanche', current_timestamp)
-insert into categoria (nome, created_at) values ('Acompanhamento', current_timestamp)
-insert into categoria (nome, created_at) values ('Bebida', current_timestamp)
-insert into categoria (nome, created_at) values ('Sobremesa', current_timestamp)
-insert into categoria (nome, created_at) values ('Combo', current_timestamp)
+insert into categoria (nome, created_at) values ('Lanche', current_timestamp);
+insert into categoria (nome, created_at) values ('Acompanhamento', current_timestamp);
+insert into categoria (nome, created_at) values ('Bebida', current_timestamp);
+insert into categoria (nome, created_at) values ('Sobremesa', current_timestamp);
+insert into categoria (nome, created_at) values ('Combo', current_timestamp);
 
 insert into produto (nome, descricao, categoria_id, valor, created_at) values ('Hamburger Brutal', 'O Queridinho Da Galera! Nosso burger mais pedido vai com 180g do nosso delicioso blend angus, pão australiano, maionese especial, bacon defumado, e queijo cheddar... (O duplo vai com o dobro de carne e queijo)', 1, 35.6, current_timestamp)
 insert into produto (nome, descricao, categoria_id, valor, created_at) values ('Hamburger Especial', 'Seu novo burger favorito! Nosso novo burger vai com nosso blend 180g angus, pão pretzel bem macio, queijo minas que além de um sabor delicioso, traz uma textura única para seu burger. E pra finalizar: um catchup de goiabada feito na casa! Um clássico da culinária agora no seu burger!', 1, 45.6, current_timestamp)
