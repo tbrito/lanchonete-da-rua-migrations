@@ -23,7 +23,7 @@ jobs:
         with:
           operation: 'update'
           classpath: 'produtos'
-          changeLogFile: 'create-tables.sql'
+          changeLogFile: '202312110756_insertProducts.sql'
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           url: ${{ secrets.URL }}          

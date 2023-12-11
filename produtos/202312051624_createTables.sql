@@ -11,7 +11,8 @@ CREATE TABLE public.categoria (
 CREATE TABLE public.produto (
 	id integer NOT NULL GENERATED ALWAYS AS IDENTITY,
 	nome varchar NULL,
-	categoria_id varchar NULL,
+	categoria_id integer NULL,
 	descricao varchar NULL,
+	valor numeric NULL
 	created_at timestamp NULL
 );

@@ -1,5 +1,0 @@
-insert into public.categoria (nome, created_at) values ('Lanche', current_timestamp)
-insert into public.categoria (nome, created_at) values ('Acompanhamento', current_timestamp)
-insert into public.categoria (nome, created_at) values ('Bebida', current_timestamp)
-insert into public.categoria (nome, created_at) values ('Sobremesa', current_timestamp)
-insert into public.categoria (nome, created_at) values ('Combo', current_timestamp)
