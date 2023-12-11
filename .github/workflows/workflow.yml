@@ -14,16 +14,30 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-liquibase-action:
+  products-liquibase-action:
     runs-on: ubuntu-latest
-    name: Update LanchoneteDb
+    name: Update Produtos on LanchoneteDb
     steps:
       - uses: actions/checkout@v2
       - uses: liquibase/liquibase-github-action@v2
         with:
           operation: 'update'
           classpath: 'produtos'
-          changeLogFile: '202312110756_insertProducts.sql'
+          changeLogFile: '202312051624_createTables.sql'
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          url: ${{ secrets.URL }}          
+          url: '${{ secrets.URL }}/produtos'      
+  clientes-liquibase-action:
+    runs-on: ubuntu-latest
+    name: Update Clientes on LanchoneteDb
+    steps:
+      - uses: actions/checkout@v2
+      - uses: liquibase/liquibase-github-action@v2
+        with:
+          operation: 'update'
+          classpath: 'clientes'
+          changeLogFile: '202312111805_createTables.sql'
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          url: '${{ secrets.URL }}/cliente'      
+
