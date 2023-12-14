@@ -13,6 +13,6 @@ CREATE TABLE public.produto (
 	nome varchar NULL,
 	categoria_id integer NULL,
 	descricao varchar NULL,
-	valor numeric NULL
+	valor numeric NULL,
 	created_at timestamp NULL
 );
