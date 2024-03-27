@@ -39,7 +39,20 @@ jobs:
           changeLogFile: '202312111805_createTables.sql'
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          url: '${{ secrets.URL }}/cliente'      
+          url: '${{ secrets.URL }}/cliente'   
+  clientes2-liquibase-action:
+    runs-on: ubuntu-latest
+    name: Update Clientes on LanchoneteDb
+    steps:
+      - uses: actions/checkout@v2
+      - uses: liquibase/liquibase-github-action@v2
+        with:
+          operation: 'update'
+          classpath: 'clientes2'
+          changeLogFile: '202403270837_createTables.sql'
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          url: '${{ secrets.URL }}/clientes2'               
   pedidos-liquibase-action:
     runs-on: ubuntu-latest
     name: Update Pedidos on LanchoneteDb
